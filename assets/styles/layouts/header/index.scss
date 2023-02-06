@@ -1,0 +1,43 @@
+.headers {
+  background-image: url("@/static/images/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 989px;
+  position: relative;
+
+  @include bp(xs) {
+    height: 608px;
+  }
+
+  &__image {
+    #img {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      max-width: 938px;
+      width: 90%;
+      height: 938px;
+
+      @include bp(xs) {
+        width: 351px;
+        height: 351px;
+        bottom: -230px;
+        left: 56px;
+      }
+    }
+
+    .v-btn {
+      position: absolute;
+      right: 87px;
+      bottom: 0;
+      background: white;
+
+      @include bp(xs) {
+        bottom: -120px;
+        right: 22px;
+      }
+    }
+  }
+}

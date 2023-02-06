@@ -1,0 +1,45 @@
+/* stylelint-disable selector-class-pattern, selector-id-pattern */
+@import "./variables";
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+::v-deep {
+  iframe .frvBxo3OzNO6g_x_mz5H {
+    display: none !important;
+  }
+}
+html,
+body,
+#__nuxt,
+.__layout,
+.layout-root {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.v-application {
+  font-size: 14px;
+  font-weight: 400;
+
+  p {
+    margin-bottom: 0 !important;
+  }
+}
+
+::v-deep.v-application p {
+  margin-bottom: 0;
+}
+
+.v-expansion-panel-content__wrap {
+  padding: 0 !important;
+}
+
+.v-dialog:not(.v-dialog--fullscreen) {
+  max-height: 95% !important;
+}

@@ -1,0 +1,9 @@
+::v-deep.base-text-field {
+  .v-input {
+    &__slot {
+      fieldset {
+        color: #fff;
+      }
+    }
+  }
+}

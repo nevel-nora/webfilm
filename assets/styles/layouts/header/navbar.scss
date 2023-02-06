@@ -1,0 +1,57 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  height: 80px;
+
+  &__logo {
+    width: 109px;
+    height: 64px;
+
+    @include bp(xs) {
+      width: 68px;
+      height: 40px;
+    }
+  }
+
+  @include bp(xl) {
+    padding: 20px 87px;
+  }
+
+  &__redirect {
+    display: flex;
+    align-items: center;
+    padding-right: 14px;
+
+    @include bp(xs) {
+      display: none;
+    }
+
+    & > a {
+      text-transform: uppercase;
+      padding-right: 24px;
+      color: #fff;
+
+      @include bp(lg) {
+        padding-right: 84px;
+      }
+    }
+  }
+}
+
+.v-btn {
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  right: 20px;
+  top: 23px;
+
+  #menu {
+    width: 33px;
+    height: 33px;
+  }
+
+  @include bp(sm) {
+    display: none;
+  }
+}

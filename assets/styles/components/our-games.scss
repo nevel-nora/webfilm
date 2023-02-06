@@ -1,0 +1,76 @@
+::v-deep.our-games {
+  &__title {
+    text-align: center;
+    margin-top: 128px;
+
+    @include bp(xs) {
+      margin-top: 50px;
+    }
+  }
+
+  &__description {
+    color: $neutral-n500;
+    max-width: 860px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 24px;
+
+    @include bp(xs) {
+      margin-top: 14px;
+    }
+  }
+
+  &__introdution {
+    margin-top: 80px;
+    margin-bottom: 128px;
+
+    .card {
+      margin: 0 10px;
+    }
+
+    .card:nth-child(2n - 2) {
+      padding-top: 55px;
+    }
+
+    @include bp(xs) {
+      margin-top: 40px;
+      margin-bottom: 47px;
+    }
+
+    .card-image {
+      width: 410px;
+      height: 560px;
+
+      @include bp(xs) {
+        width: 164px;
+        height: 268px;
+      }
+    }
+
+    .title-card {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 60px;
+      margin-bottom: 15px;
+
+      @include bp(xs) {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+      }
+    }
+
+    .subtitle-card {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
+
+      @include bp(xs) {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+  }
+}

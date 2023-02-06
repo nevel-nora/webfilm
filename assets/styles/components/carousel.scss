@@ -1,0 +1,30 @@
+.carousel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $neutral-n50;
+
+  p {
+    padding: 120px 0 80px;
+
+    @include bp(xs) {
+      font-size: 40px;
+      line-height: 50px;
+      padding: 40px 0;
+    }
+  }
+
+  .v-sheet {
+    max-width: 1466px;
+    width: 100%;
+    background-color: $neutral-n50;
+    padding-bottom: 120px;
+
+    @include bp(xs) {
+      font-size: 40px;
+      padding: 40px 0;
+    }
+  }
+}
